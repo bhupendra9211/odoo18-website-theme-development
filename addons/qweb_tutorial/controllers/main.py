@@ -10,7 +10,15 @@ from odoo.http import request
 class QwebTutorials(http.Controller):
     @http.route('/qweb-tutorials', type='http', auth='public', website=True)
     def qweb_tutorials(self):
-        return http.request.render("qweb_tutorial.somePythonTemplate")
+        data={
+            'string':'QWEB Tutorials',
+            'integer':'1900',
+            'some_float': 10.02,
+            'boolean':True,
+            'some_list':[1,2,3,4,5],
+            'some_dict':{'any_key':"any_value"},
+        }
+        return http.request.render("qweb_tutorial.somePythonTemplate",data)
     
     @http.route('/bhupendra', type='http', auth='public', website=True)
     def bhupendra(self):

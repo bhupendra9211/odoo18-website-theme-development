@@ -6,3 +6,4 @@ class Book(models.Model):
 
     name = fields.Char("Title")
     author = fields.Char("Author")
+    price = fields.Float("Price")

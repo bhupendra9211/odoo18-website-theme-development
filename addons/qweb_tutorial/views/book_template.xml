@@ -9,8 +9,9 @@
           <t t-foreach="books" t-as="book">
             <li>
               <strong>
+                 <!-- <strong t-field="book.name"/> -->
                 <t t-esc="book.name" />
-              </strong> by <t t-esc="book.author" />
+              </strong> by <t t-esc="book.author" /> and price is <strong t-field="book.price"/>
             </li>
           </t>
         </ul>

@@ -9,6 +9,12 @@
                 <div class="container">
                     <h1>Bhupendra Kumar Sah</h1>
                 </div>
+                <t t-set="title" t-value="'Hello World'" />
+                <t t-esc="title" />
+                <br></br>
+                <t t-out="title" />
+                <div t-out="title">
+                </div>
             </body>
         </html>
     </template>
