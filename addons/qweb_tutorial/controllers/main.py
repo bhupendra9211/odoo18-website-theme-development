@@ -12,6 +12,10 @@ class QwebTutorials(http.Controller):
     def qweb_tutorials(self):
         return http.request.render("qweb_tutorial.somePythonTemplate")
     
+    @http.route('/bhupendra', type='http', auth='public', website=True)
+    def bhupendra(self):
+        return http.request.render("qweb_tutorial.bhupendra")
+    
     @http.route('/books', type='http', auth='public', website=True)
     def list_books(self):
         books = http.request.env['library.book'].sudo().search([])

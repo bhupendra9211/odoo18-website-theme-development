@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="bhupendra" name="bhupendra">
+        <html>
+            <head>
+
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Bhupendra Kumar Sah</h1>
+                </div>
+            </body>
+        </html>
+    </template>
+</odoo>
