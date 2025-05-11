@@ -10,7 +10,8 @@
     'depends': ['website'],
     'data': [
         'views/custom_header.xml',
-        'views/footer.xml'
+        'views/footer.xml',
+        'views/homepage.xml',
     ],
     'assets': {
         'web.assets_frontend': [

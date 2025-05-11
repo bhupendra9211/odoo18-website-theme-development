@@ -6,8 +6,10 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <img src="theme_yourhome/static/src/img/logo.svg" alt="Bootstrap"
-                                width="200" />
+                            <a class="navbar-brand" href="#">
+                                <img style="height:50px; widht:auto;"
+                                    src="/theme_yourhome/static/src/img/logo.png" />
+                            </a>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent"
