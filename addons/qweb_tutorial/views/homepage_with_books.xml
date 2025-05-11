@@ -10,6 +10,7 @@
                 <t t-call="qweb_tutorial.book_list_snippet">
                     <t t-set="books" t-value="books" />
                 </t>
+                <!-- <t t-call="qweb_tutorial.somePythonTemplate"></t> -->
             </div>
         </t>
     </template>
