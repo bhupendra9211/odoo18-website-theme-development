@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="somePythonTemplate" name="Some Python Template">
+        <html>
+            <head>
+                <!-- Latest compiled and minified CSS -->
+                <!-- <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+                    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                    crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                    crossorigin="anonymous"></script> -->
+                    <t t-call-assets="web.assets_frontend"/>
+            </head>
+            <body>
+                <div class="container">
+                    <div class="row py-5">
+                        <h1>QWEB Tutorials</h1>
+                    </div>
+                </div>
+            </body>
+        </html>
+    </template>
+
+    <!-- <template id="static_template" name="Static Template">
+        <div class="alert alert-info">
+            This is a static template.
+        </div>
+    </template> -->
+
+    <!-- <template id="dynamic_template" name="Dynamic Template">
+        <article class="bg-light p-3 border shadow">
+            <h3 t-out="article_title"/>
+            <p class="text-muted"><small>This is a dynamic template</small></p>
+            <t t-out="0"/>
+            <button class="btn btn-sm btn-primary">Learn More</button>
+        </article>
+    </template> -->
+
+    <!-- <template id="slots_template" name="Slots Template">
+        <article class="bg-light p-3 border shadow">
+            <t t-out="article_title"/>
+            <t t-out="article_body"/>
+            <t t-out="0"/>
+            <t t-out="article_buttons"/>
+        </article>
+    </template> -->
+
+</odoo>

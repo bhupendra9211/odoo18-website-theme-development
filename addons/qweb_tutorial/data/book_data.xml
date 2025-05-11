@@ -1,0 +1,6 @@
+<odoo>
+  <record id="book_1" model="library.book">
+    <field name="name">The Alchemist</field>
+    <field name="author">Paulo Coelho</field>
+  </record>
+</odoo>

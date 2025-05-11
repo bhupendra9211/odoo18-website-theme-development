@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="book_list_template" name="Book List Page">
+    <t t-call="website.layout">
+      <t t-set="title">Book List</t>
+      <div class="container">
+        <h1>Books</h1>
+        <ul>
+          <t t-foreach="books" t-as="book">
+            <li>
+              <strong><t t-esc="book.name"/></strong> by <t t-esc="book.author"/>
+            </li>
+          </t>
+        </ul>
+      </div>
+    </t>
+  </template>
+</odoo>
