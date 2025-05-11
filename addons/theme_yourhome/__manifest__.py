@@ -12,6 +12,8 @@
         'views/custom_header.xml',
         'views/footer.xml',
         'views/homepage.xml',
+        'views/services_page.xml',
+        'views/menus.xml',
     ],
     'assets': {
         'web.assets_frontend': [

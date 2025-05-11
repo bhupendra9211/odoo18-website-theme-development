@@ -20,30 +20,23 @@
                         <div class="collapse navbar-collapse"
                             id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-weight-medium">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
+                                <ul class="navbar-nav mr-auto">
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                        <t t-call="website.submenu">
+                                            <t t-set="item_class" t-valuef="nav-item" />
+                                            <t t-set="link_class"
+                                                t-valuef="nav-link font-weight-medium" />
+                                        </t>
+                                    </t>
+                                </ul>
                             </ul>
-                            <!-- <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search" />
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form> -->
                         </div>
                         <div>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-weight-medium">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Sign In</a>
-                                </li>
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item ml-lg-auto" />
+                                    <t t-set="_link_class" t-valuef="nav-link font-weight-bold" />
+                                </t>
                             </ul>
                         </div>
                     </div>
