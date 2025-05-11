@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="homepage_with_books" name="Home with Books">
+        <t t-call="website.layout">
+            <t t-set="title">Home</t>
+            <div class="container">
+                <h1>Welcome to the Library</h1>
+
+                <p>Check out some books:</p>
+                <t t-call="qweb_tutorial.book_list_snippet">
+                    <t t-set="books" t-value="books" />
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

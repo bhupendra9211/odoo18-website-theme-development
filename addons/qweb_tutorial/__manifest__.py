@@ -11,6 +11,7 @@
         'views/for_python_templates.xml',
         'views/book_template.xml',
         'data/book_data.xml',
+        'views/homepage_with_books.xml'
     ],
     'installable': True,
     'application': True,

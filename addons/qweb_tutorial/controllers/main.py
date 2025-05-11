@@ -18,4 +18,12 @@ class QwebTutorials(http.Controller):
         return http.request.render("qweb_tutorial.book_list_template", {
             'books': books
         })
+    
+    @http.route('/home-with-books', type='http', auth='public', website=True)
+    def home_with_books(self):
+        books = request.env['library.book'].sudo().search([])
+        return request.render('qweb_tutorial.homepage_with_books', {
+            'books': books
+        })
+
 
