@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <odoo>
+    <template id="hello_world_snippet" name="Hello World Snippet">
+        <section class="hello-world">
+            <div class="container">
+                <h1>Hello World!</h1>
+                <p class="text-muted">This is my first Odoo snippet</p>
+            </div>
+        </section>
+    </template>
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//t[@id='installed_snippets_hook']" position="after">
+            <t t-snippet="theme_yourhome.hello_world_snippet"
+                t-thumbnail="/website/static/src/img/snippets_thumbs/s_event_upcoming_snippet.svg" />
+            <t t-snippet="theme_yourhome.property_agents"
+                t-thumbnail="/website/static/src/img/snippets_thumbs/s_event_upcoming_snippet.svg" />
+        </xpath>
+    </template>
+</odoo> -->
+<odoo>
+    <!-- Snippets menu -->
+    <!-- <template id="snippets" inherit_id="web_editor.snippets" primary="True"
+    groups="base.group_user"> -->
+    <template id="snippets" inherit_id="website.snippets" name="custom_snippets">
+        <xpath expr="//t[@id='default_snippets']" position="before">
+            <!-- <t id="default_snippets"> -->
+            <!-- <t t-set="cta_btn_text" t-value="False"/>
+            <t t-set="cta_btn_href">/contactus</t> -->
+
+            <!-- Snippet groups -->
+            <snippets id="snippet_groups" string="Custom Snippets">
+                <!-- <t snippet-group="columns" t-snippet="website.s_snippet_group" string="Columns"
+                    t-thumbnail="/website/static/src/img/snippets_thumbs/s_three_columns.svg"/> -->
+                <t snippet-group="customSnippet" t-snippet="website.s_snippet_group"
+                    string="Property Agents"
+                    t-thumbnail="/theme_yourhome/static/src/img/snippets_thumbs/agents.svg" />
+                <!-- <t snippet-group="helloworld" t-snippet="website.s_snippet_group" string="hello
+                world"
+                    t-thumbnail="/website/static/src/img/snippets_thumbs/s_three_columns.svg"/> -->
+            </snippets>
+
+            <snippets id="snippet_structure" string="Structure">
+                <!-- Columns group -->
+                <t t-snippet="theme_yourhome.property_agents" string="Property Agents"
+                    group="customSnippet">
+                    <keywords>property, agents, property agents</keywords>
+                </t>
+                <!-- <t t-snippet="theme_yourhome.property_agents" string="hello world"
+                group="helloworld">
+                    <keywords>hello, world, snippet, odoo</keywords>
+                </t> -->
+                <!-- <t t-snippet="website.s_features_wall" string="Features Wall" group="columns">
+                    <keywords>reveal, showcase, launch, presentation, announcement, content, picture, photo,
+                illustration, media, visual, combination</keywords>
+                </t> -->
+            </snippets>
+            <!-- </t> -->
+        </xpath>
+    </template>
+
+    <template id="snippet_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='Box']" position="after">
+            <div data-selector=".property-agents">
+                <we-select string="Image Border">
+                    <we-button data-select-class="border-none">None</we-button>
+                    <we-button data-select-class="border-small">Small</we-button>
+                    <we-button data-select-class="border-medium">Medium</we-button>
+                    <we-button data-select-class="border-large">Large</we-button>
+                    <we-button data-select-class="border-extra-large">Extra Large</we-button>
+                </we-select>
+                <we-select string="Company Name">
+                    <we-button data-select-class="company-visible">Visible</we-button>
+                    <we-button data-select-class="company-hidden">Hidden</we-button>
+                </we-select>
+            </div>
+        </xpath>
+    </template>
+</odoo>

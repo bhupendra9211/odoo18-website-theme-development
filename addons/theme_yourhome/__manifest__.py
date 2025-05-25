@@ -14,15 +14,22 @@
         'views/homepage.xml',
         'views/services_page.xml',
         'views/menus.xml',
+        'views/snippets/property-agents.xml',
+        'views/snippets/snippets.xml',
     ],
     'assets': {
         'web.assets_frontend': [
             'theme_yourhome/static/src/scss/styles.scss',
+            'theme_yourhome/static/src/scss/property-agents.scss',
         ],
         'web._assets_primary_variables': [
             'theme_yourhome/static/src/scss/primary_variables.scss',
-   ],
-},
+        ],
+        # 'web._assets_frontend_helpers': [
+        #     ('prepend', 'theme_yourhome/static/src/scss/bootstrap_overridden.scss'),
+        # ],
+
+    },
     'images': [
     ],
     'license': 'LGPL-3',
