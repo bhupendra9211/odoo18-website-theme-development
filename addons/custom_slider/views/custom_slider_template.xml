@@ -6,7 +6,6 @@
             <t t-call="website.layout">
                 <t t-set="pageName" t-value="'homepage'" />
                 <section class="sm_slider_cart_container" id="custom_slider_solution">
-                    <!-- <div class="customContainer solution oe_structure o_editable"> -->
                     <div class="customContainer solution oe_structure o_editable">
                         <div class="customContent">
                             <div class="customText-content">

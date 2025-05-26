@@ -14,7 +14,9 @@
     'depends': ['website'],
     
     'data': [
-        'views/custom_slider_template.xml',
+        # 'views/custom_slider_template.xml',
+        'views/snippets/custom_slider.xml',
+        'views/snippets/snippets.xml',
     ],
     'assets': {
         'web.assets_frontend': [

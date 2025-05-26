@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippets" inherit_id="website.snippets" name="custom_slider">
+        <xpath expr="//t[@id='default_snippets']" position="before">
+            <snippets id="snippet_groups" string="Custom Slider">
+                <t snippet-group="customSlider" t-snippet="website.s_snippet_group"
+                    string="Custom Slider"
+                    t-thumbnail="/website/static/src/img/snippets_thumbs/s_three_columns.svg"/>
+            </snippets>
+
+            <snippets id="snippet_structure" string="Structure">
+                <t t-snippet="custom_slider.custom_slider_snippet" string="Custom Slider"
+                    group="customSlider">
+                    <keywords>custom slider , slider , carousel, solution</keywords>
+                </t>
+            </snippets>
+        </xpath>
+    </template>
+</odoo>
