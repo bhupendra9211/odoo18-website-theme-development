@@ -1,0 +1,134 @@
+.navbar > .customContainer,
+.o_main_nav .customContainer {
+    padding: 0 !important;
+}
+
+:root {
+    --content-width: initial;
+}
+
+.customContainer.stories .pages .page {
+    font-size: initial;
+} 
+
+.customContainer.stories .wrapper-bg img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.customContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+    /* max-width: initial; */
+  }
+
+
+  .customContainer.solution .card, .solution.o_container_small .card {
+    border: none;
+  }
+
+  .customContainer.solution .cards {
+    width: 54.8rem;
+  }
+  .customContainer.solution .card.active {
+    width: 20.625rem;
+    
+  }
+
+  .customContainer.solution .card.active .card__img {
+    height: 34.875rem
+  }
+
+  .customContainer.innovation {
+   padding-top: 80px;
+   padding-bottom: 80px;
+  }
+
+  .customContainer.innovation .customContent {
+    padding-left: initial;
+  }
+
+  .customContainer.innovation .customContainer-bg {
+    width: inherit;
+  }
+
+  .customContainer.stories .pages {
+    top: 39.875rem;
+  }
+  
+  .card__img img {
+    object-fit: cover;
+  }
+
+  .card__img.active,
+.card__content.active {
+  opacity: 1;
+}
+
+.customContainer.stories .stories__btn a {
+  font-size: 1rem;
+  padding-right: 2rem;
+}
+.customContainer.stories .stories__btn a span {
+  margin-right: 10px;
+}
+
+.customContainer.stories .pages {
+  width: initial;
+}
+
+.customContainer.stories .pages .page:before {
+  left: 85%;
+}
+
+.customContainer.stories .pages .page:after {
+  left: 85%;
+}
+
+label, 
+a ,
+button{
+  height: initial !important;
+}
+
+.form-label {
+  font-size: initial !important;
+}
+
+
+@media(min-width: 768px) {
+  #sm_custom_innovation, #sm_ss_section, #custom_slider_solution_mobile {
+    display: none;
+  }
+  header ul.navbar-nav a {
+    height: inherit;
+  }
+}
+
+@media(max-width: 767px) {
+  #custom_slider_solution, #sm_custom-tab, #sm_v_slider {
+    display: none;
+  }
+    .swiper--solutions {
+        width: 73.07vw;
+        margin: 12vw 0 0 4.54vw !important;
+        overflow: visible !important;
+    }
+
+    .swiper--success-stories1 .swiper-slide {
+      transform: scale(.9) !important;
+  }
+
+    .swiper--success-stories1 .swiper-slide-active {
+      transform: scale(1) !important;
+  }
+
+    .swiper--success-stories1 {
+      width: 62vw;
+      margin: 14vw 0 10vw 6.67vw;
+      overflow: visible !important;
+  }
+}

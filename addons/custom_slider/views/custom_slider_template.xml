@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_slider_template" inherit_id="website.homepage"
+        name="Custom Slider Template">
+        <xpath expr="//t[@t-call='website.layout']" position="replace">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'" />
+                <section class="sm_slider_cart_container" id="custom_slider_solution">
+                    <!-- <div class="customContainer solution oe_structure o_editable"> -->
+                    <div class="customContainer solution oe_structure o_editable">
+                        <div class="customContent">
+                            <div class="customText-content">
+                                <h2 class="customTitle">Solution</h2>
+                                <p class="customText"> Milesight provides a range of solutions to<br />
+                                    empower a more productive and effective society. </p>
+                            </div>
+                            <div class="customCards">
+                                <div class="cards-wrapper">
+                                    <div class="customCard" data-index="1">
+                                        <p class="card__small-title">Video <br /> Surveillance</p>
+                                        <div class="customCard__img">
+                                            <img class="custom_img ls-is-cached lazyloaded"
+                                                alt="smart office"
+                                                title="smart office"
+                                                src="custom_slider/static/src/images/indoor-air-quality.jpg" />
+                                        </div>
+                                    </div>
+
+                                    <div class="customCard" data-index="2">
+                                        <p class="card__small-title">Intelligent <br /> Traffic</p>
+                                        <div class="customCard__img">
+                                            <img class="custom_img ls-is-cached lazyloaded"
+                                                alt="people counting"
+                                                title="people counting"
+                                                src="custom_slider/static/src/images/intelligent-traffic.jpg" />
+                                        </div>
+                                    </div>
+
+                                    <div class="customCard" data-index="3">
+                                        <p class="card__small-title">Indoor Air <br /> Quality</p>
+                                        <div class="customCard__img">
+                                            <img class="custom_img ls-is-cached lazyloaded"
+                                                alt="video surveillance"
+                                                title="video surveillance"
+                                                src="custom_slider/static/src/images/people-counting.jpg" />
+                                        </div>
+                                    </div>
+
+                                    <div class="customCard" data-index="4">
+                                        <p class="card__small-title">Smart<br /> Restroom</p>
+                                        <div class="customCard__img">
+                                            <img class="custom_img ls-is-cached lazyloaded"
+                                                alt="video surveillance"
+                                                title="video surveillance"
+                                                src="custom_slider/static/src/images/smart-restroom.jpg" />
+                                        </div>
+                                    </div>
+
+                                    <div class="customCard" data-index="5">
+                                        <p class="card__small-title">Smart <br /> Office</p>
+                                        <div class="customCard__img">
+                                            <img class="custom_img ls-is-cached lazyloaded"
+                                                alt="video surveillance"
+                                                title="video surveillance"
+                                                src="custom_slider/static/src/images/video-surveillance.jpg" />
+                                        </div>
+                                    </div>
+
+                                    <div class="customCard active" data-index="6">
+                                        <p class="card__small-title">People <br /> Counting</p>
+                                        <div class="customCard__img">
+                                            <img class="custom_img ls-is-cached lazyloaded"
+                                                alt="video surveillance"
+                                                title="video surveillance"
+                                                src="custom_slider/static/src/images/smart-office.jpg" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card__contents">
+                                <div class="card__content">
+                                    <h2 class="card__title">Video Surveillance</h2>
+                                    <p class="card__text">A total AI video surveillance solution
+                                        with cameras, NVRs and video management softwares, meets
+                                        various requirements from entry level to high end.</p>
+                                    <a class="card__btn" href="#">Learn More</a>
+                                </div>
+                                <div class="card__content">
+                                    <h2 class="card__title">Intelligent Traffic</h2>
+                                    <p class="card__text">Lead the way towards intelligence,
+                                        ensuring road safety and intelligent traffic management and
+                                        efficient parking management.</p>
+                                    <a class="card__btn" href="#">Learn More</a>
+                                </div>
+                                <div class="card__content">
+                                    <h2 class="card__title">Indoor Air Quality</h2>
+                                    <p class="card__text">Milesight Indoor Air Quality Solution
+                                        helps visualize the air quality through diversified sensors.
+                                        With real-time monitoring, occupants can gain actionable
+                                        insights.</p>
+                                    <a class="card__btn" href="#">Learn More</a>
+                                </div>
+                                <div class="card__content">
+                                    <h2 class="card__title">Smart Restroom</h2>
+                                    <p class="card__text">Multiple products mutually collaborating
+                                        to improve bathrooms hygiene, reduce waste, alleviate
+                                        complaints and facilitate maintenance.</p>
+                                    <a class="card__btn" href="#">Learn More</a>
+                                </div>
+                                <div class="card__content">
+                                    <h2 class="card__title">Smart Office</h2>
+                                    <p class="card__text">Stay one step ahead with actionable
+                                        insights to improve decision-making and explore the
+                                        potential of workspace for a smarter office.</p>
+                                    <a class="card__btn" href="#">Learn More</a>
+                                </div>
+                                <div class="card__content active">
+                                    <h2 class="card__title">People Counting</h2>
+                                    <p class="card__text">A reliable and effective way to count
+                                        people, makes it easy to understand how many people are in
+                                        an area at any time, how they move and periods of peak
+                                        occupancy.</p>
+                                    <a class="card__btn" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card__prev-btn">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="card__next-btn">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </xpath>
+    </template>
+</odoo>
