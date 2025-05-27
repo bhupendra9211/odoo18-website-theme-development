@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <odoo>
+<odoo>
     <template id="custom_slider_snippet" name="Custom Slider">
         <section class="sm_slider_cart_container" id="custom_slider_solution">
             <div class="customContainer solution oe_structure o_editable">
@@ -14,60 +14,60 @@
                             <div class="customCard" data-index="1">
                                 <p class="card__small-title">Video <br /> Surveillance</p>
                                 <div class="customCard__img">
-                                    <img class="custom_img ls-is-cached lazyloaded"
+                                    <img class=" ls-is-cached lazyloaded"
                                         alt="smart office"
                                         title="smart office"
-                                        src="custom_slider/static/src/images/indoor-air-quality.jpg" />
+                                        src="custom_slider/static/src/img/indoor-air-quality.jpg" />
                                 </div>
                             </div>
 
                             <div class="customCard" data-index="2">
                                 <p class="card__small-title">Intelligent <br /> Traffic</p>
                                 <div class="customCard__img">
-                                    <img class="custom_img ls-is-cached lazyloaded"
+                                    <img class=" ls-is-cached lazyloaded"
                                         alt="people counting"
                                         title="people counting"
-                                        src="custom_slider/static/src/images/intelligent-traffic.jpg" />
+                                        src="custom_slider/static/src/img/intelligent-traffic.jpg" />
                                 </div>
                             </div>
 
                             <div class="customCard" data-index="3">
                                 <p class="card__small-title">Indoor Air <br /> Quality</p>
                                 <div class="customCard__img">
-                                    <img class="custom_img ls-is-cached lazyloaded"
+                                    <img class=" ls-is-cached lazyloaded"
                                         alt="video surveillance"
                                         title="video surveillance"
-                                        src="custom_slider/static/src/images/people-counting.jpg" />
+                                        src="custom_slider/static/src/img/people-counting.jpg" />
                                 </div>
                             </div>
 
                             <div class="customCard" data-index="4">
                                 <p class="card__small-title">Smart<br /> Restroom</p>
                                 <div class="customCard__img">
-                                    <img class="custom_img ls-is-cached lazyloaded"
+                                    <img class=" ls-is-cached lazyloaded"
                                         alt="video surveillance"
                                         title="video surveillance"
-                                        src="custom_slider/static/src/images/smart-restroom.jpg" />
+                                        src="custom_slider/static/src/img/smart-restroom.jpg" />
                                 </div>
                             </div>
 
                             <div class="customCard" data-index="5">
                                 <p class="card__small-title">Smart <br /> Office</p>
                                 <div class="customCard__img">
-                                    <img class="custom_img ls-is-cached lazyloaded"
+                                    <img class=" ls-is-cached lazyloaded"
                                         alt="video surveillance"
                                         title="video surveillance"
-                                        src="custom_slider/static/src/images/video-surveillance.jpg" />
+                                        src="custom_slider/static/src/img/video-surveillance.jpg" />
                                 </div>
                             </div>
 
                             <div class="customCard active" data-index="6">
                                 <p class="card__small-title">People <br /> Counting</p>
                                 <div class="customCard__img">
-                                    <img class="custom_img ls-is-cached lazyloaded"
+                                    <img class=" ls-is-cached lazyloaded"
                                         alt="video surveillance"
                                         title="video surveillance"
-                                        src="custom_slider/static/src/images/smart-office.jpg" />
+                                        src="custom_slider/static/src/img/smart-office.jpg" />
                                 </div>
                             </div>
 
@@ -130,48 +130,4 @@
             </div>
         </section>
     </template>
-</odoo> -->
-<odoo>
-  <template id="custom_slider_snippet" name="Homepage Slider Snippet">
-    <section class="oe_structure customContainer solution" id="custom_slider_solution">
-      <div class="customContent">
-        <div class="customText-content">
-          <h2 class="customTitle">Solution</h2>
-          <p class="customText">
-            Milesight provides a range of solutions to empower a more productive and effective society.
-          </p>
-        </div>
-
-        <div class="customCards">
-          <div class="cards-wrapper">
-            <t t-foreach="[
-              {'title': 'Video Surveillance', 'img': 'video-surveillance.jpg', 'desc': 'AI video surveillance solution...'},
-              {'title': 'Intelligent Traffic', 'img': 'intelligent-traffic.jpg', 'desc': 'Lead the way with smart traffic...'},
-              {'title': 'Indoor Air Quality', 'img': 'indoor-air-quality.jpg', 'desc': 'Visualize indoor air quality...'},
-              {'title': 'Smart Restroom', 'img': 'smart-restroom.jpg', 'desc': 'Improve hygiene with smart sensors...'},
-              {'title': 'Smart Office', 'img': 'smart-office.jpg', 'desc': 'Optimize your workspace...'},
-              {'title': 'People Counting', 'img': 'people-counting.jpg', 'desc': 'Understand occupancy...'}
-            ]" t-as="card" t-index="index">
-              <div t-attf-class="customCard #{'active' if index == 5 else ''}" t-att-data-index="index">
-                <div class="customCard__img">
-                  <img t-att-src="'/custom_slider/static/src/img/' + card['img']" t-att-alt="card['title']" />
-                </div>
-                <div class="card__contents">
-                  <div class="card__content" t-attf-class="card__content #{'active' if index == 5 else ''}">
-                    <h3 class="card__title"><t t-esc="card['title']" /></h3>
-                    <p class="card__small-title"><t t-esc="card['desc']" /></p>
-                    <a href="#" class="card__btn">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </t>
-          </div>
-
-          <!-- Nav Buttons -->
-          <div class="card__prev-btn"><i class="iconfont fa fa-arrow-up"></i></div>
-          <div class="card__next-btn"><i class="iconfont fa fa-arrow-down"></i></div>
-        </div>
-      </div>
-    </section>
-  </template>
 </odoo>

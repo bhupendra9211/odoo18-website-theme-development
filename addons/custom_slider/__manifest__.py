@@ -21,13 +21,14 @@
     'assets': {
         'web.assets_frontend': [
             # 'custom_slider/static/src/scss/custom_slider_template.css',
-            'custom_slider/static/src/js/custom_slider.js',
-
+            'custom_slider/static/src/js/custom_slider_template.js',
+            # 'custom_slider/static/src/js/custom_slider.js',
 
             # 'custom_slider/static/src/scss/sync.min.css',
             # 'custom_slider/static/src/scss/async.min.css',
             # 'custom_slider/static/src/scss/index.min.css',
-            'custom_slider/static/src/scss/custom_slider.scss',
+            'custom_slider/static/src/scss/custom_slider.css',
+            # 'custom_slider/static/src/scss/custom_slider.scss',
 
 
             # 'custom_slider/static/src/js/gsap.min.js',
