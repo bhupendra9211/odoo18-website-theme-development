@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<!-- <odoo>
     <template id="custom_slider_snippet" name="Custom Slider">
         <section class="sm_slider_cart_container" id="custom_slider_solution">
             <div class="customContainer solution oe_structure o_editable">
@@ -130,4 +130,48 @@
             </div>
         </section>
     </template>
+</odoo> -->
+<odoo>
+  <template id="custom_slider_snippet" name="Homepage Slider Snippet">
+    <section class="oe_structure customContainer solution" id="custom_slider_solution">
+      <div class="customContent">
+        <div class="customText-content">
+          <h2 class="customTitle">Solution</h2>
+          <p class="customText">
+            Milesight provides a range of solutions to empower a more productive and effective society.
+          </p>
+        </div>
+
+        <div class="customCards">
+          <div class="cards-wrapper">
+            <t t-foreach="[
+              {'title': 'Video Surveillance', 'img': 'video-surveillance.jpg', 'desc': 'AI video surveillance solution...'},
+              {'title': 'Intelligent Traffic', 'img': 'intelligent-traffic.jpg', 'desc': 'Lead the way with smart traffic...'},
+              {'title': 'Indoor Air Quality', 'img': 'indoor-air-quality.jpg', 'desc': 'Visualize indoor air quality...'},
+              {'title': 'Smart Restroom', 'img': 'smart-restroom.jpg', 'desc': 'Improve hygiene with smart sensors...'},
+              {'title': 'Smart Office', 'img': 'smart-office.jpg', 'desc': 'Optimize your workspace...'},
+              {'title': 'People Counting', 'img': 'people-counting.jpg', 'desc': 'Understand occupancy...'}
+            ]" t-as="card" t-index="index">
+              <div t-attf-class="customCard #{'active' if index == 5 else ''}" t-att-data-index="index">
+                <div class="customCard__img">
+                  <img t-att-src="'/custom_slider/static/src/img/' + card['img']" t-att-alt="card['title']" />
+                </div>
+                <div class="card__contents">
+                  <div class="card__content" t-attf-class="card__content #{'active' if index == 5 else ''}">
+                    <h3 class="card__title"><t t-esc="card['title']" /></h3>
+                    <p class="card__small-title"><t t-esc="card['desc']" /></p>
+                    <a href="#" class="card__btn">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </div>
+
+          <!-- Nav Buttons -->
+          <div class="card__prev-btn"><i class="iconfont fa fa-arrow-up"></i></div>
+          <div class="card__next-btn"><i class="iconfont fa fa-arrow-down"></i></div>
+        </div>
+      </div>
+    </section>
+  </template>
 </odoo>
