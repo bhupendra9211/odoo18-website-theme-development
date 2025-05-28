@@ -17,6 +17,14 @@
                     group="customSlider">
                     <keywords>image slider , slider ,</keywords>
                 </t>
+                <t t-snippet="custom_slider.starbucks_snippet_slider" string="Starbucks Slider"
+                    group="customSlider">
+                    <keywords>starbucks , slider ,</keywords>
+                </t>
+                <t t-snippet="custom_slider.bootstrap_snippet_slider" string="Bootstrap Slider"
+                    group="customSlider">
+                    <keywords>bootstrap slider , slider ,</keywords>
+                </t>
             </snippets>
         </xpath>
     </template>

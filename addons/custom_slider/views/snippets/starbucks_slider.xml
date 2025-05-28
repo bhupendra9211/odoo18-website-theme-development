@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="starbucks_snippet_slider" name="Custom Slider">
+        <section class="sm_slider_cart_container" id="starbucks_slider">
+            <section class="carousel next">
+                <div class="list">
+                    <article class="item other_1">
+                        <div class="main-content"
+                            style="background-color: #9c4d2f;">
+                            <div class="content">
+                                <h2>Caffe Latte, a new product</h2>
+                                <p class="price">$ 20</p>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores labore animi voluptatibus sequi illo, earum
+                                    molestias explicabo officiis iste neque? Quis quod
+                                    eligendi fugit, dolore nam itaque modi exercitationem
+                                    voluptatem corrupti aut aspernatur. Quos non in sed
+                                    ratione tenetur harum.
+                                </p>
+                                <button class="addToCard">
+                                    Add To Card
+                                </button>
+                            </div>
+                        </div>
+                        <figure class="image">
+                            <img src="custom_slider/static/src/img/1.png" alt="Caffe Latte" />
+                            <figcaption>Caffe Latte, a new product</figcaption>
+                        </figure>
+                    </article>
+                    <article class="item active">
+                        <div class="main-content"
+                            style="background-color: #f5bfaf;">
+                            <div class="content">
+                                <h2>Strawberry mocha, a new product</h2>
+                                <p class="price">$ 20</p>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores labore animi voluptatibus sequi illo, earum
+                                    molestias explicabo officiis iste neque? Quis quod
+                                    eligendi fugit, dolore nam itaque modi exercitationem
+                                    voluptatem corrupti aut aspernatur. Quos non in sed
+                                    ratione tenetur harum.
+                                </p>
+                                <button class="addToCard">
+                                    Add To Card
+                                </button>
+                            </div>
+                        </div>
+                        <figure class="image">
+                            <img src="custom_slider/static/src/img/2.png" alt="Strawberry mocha" />
+                            <figcaption>Strawberry mocha, a new product</figcaption>
+                        </figure>
+                    </article>
+                    <article class="item other_2">
+                        <div class="main-content"
+                            style="background-color: #dedfe1;">
+                            <div class="content">
+                                <h2>Doppio espresso, a new product</h2>
+                                <p class="price">$ 20</p>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores labore animi voluptatibus sequi illo, earum
+                                    molestias explicabo officiis iste neque? Quis quod
+                                    eligendi fugit, dolore nam itaque modi exercitationem
+                                    voluptatem corrupti aut aspernatur. Quos non in sed
+                                    ratione tenetur harum.
+                                </p>
+                                <button class="addToCard">
+                                    Add To Card
+                                </button>
+                            </div>
+                        </div>
+                        <figure class="image">
+                            <img src="custom_slider/static/src/img/3.png" alt="Doppio espresso" />
+                            <figcaption>Doppio espresso, a new product</figcaption>
+                        </figure>
+                    </article>
+                    <article class="item">
+                        <div class="main-content"
+                            style="background-color: #7eb63d;">
+                            <div class="content">
+                                <h2>Matcha latte macchiato, a new product</h2>
+                                <p class="price">$ 20</p>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores labore animi voluptatibus sequi illo, earum
+                                    molestias explicabo officiis iste neque? Quis quod
+                                    eligendi fugit, dolore nam itaque modi exercitationem
+                                    voluptatem corrupti aut aspernatur. Quos non in sed
+                                    ratione tenetur harum.
+                                </p>
+                                <button class="addToCard">
+                                    Add To Card
+                                </button>
+                            </div>
+                        </div>
+                        <figure class="image">
+                            <img src="custom_slider/static/src/img/4.png"
+                                alt="Matcha latte macchiato" />
+                            <figcaption>Matcha latte macchiato, a new product</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="arrows">
+                    <button id="prev">
+                        &lt;
+                    </button>
+                    <button id="next">&gt;</button>
+                </div>
+            </section>
+        </section>
+    </template>
+</odoo>

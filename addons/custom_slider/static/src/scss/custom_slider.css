@@ -1,23 +1,8 @@
 .customContainer {
     position: relative;
-    /* padding: 80px 0 */
 }
-/* .customContainer * {
-    font-family: manrope, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, "sans-serif";
-    box-sizing: border-box
-} */
-
-/* .customContainer a,
-.customContainer span {
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
-    line-height: inherit
-} */
 
 .customContainer .customContent {
-    /* width: var(--content-width); */
     margin: 0 auto;
     position: relative
 }
@@ -100,7 +85,8 @@
 }
 
 .customContainer.solution .customCard img {
-    height: 100%
+    width: 100%;
+    object-fit: cover;
 }
 
 .customContainer.solution .card__title {
@@ -135,7 +121,7 @@
     width: 100%;
     transform: translateX(100%);
     opacity: 0;
-    transition: all .6s
+    transition: all .6s;
 }
 
 .customContainer.solution .card__content.active {
@@ -227,4 +213,105 @@
 
 .customContainer.solution .customCard.active .card__small-title {
     opacity: 0
+}
+
+@media (max-width: 1200px) {
+  .customContainer.solution .customCards {
+    width: 100%;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .customContainer.solution .customText-content {
+    right: 1rem;
+  }
+
+  .customContainer.solution .customCard.active {
+    width: 22rem;
+  }
+
+  .customContainer.solution .customCard.active .customCard__img {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .customContainer.solution .customContent {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .customContainer.solution .customText-content {
+    position: static;
+    text-align: center;
+  }
+
+  .customContainer.solution .customTitle,
+  .customContainer.solution .customText {
+    text-align: center;
+  }
+
+  .customContainer.solution .customCards {
+    overflow-x: auto;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .customContainer.solution .cards-wrapper {
+    justify-content: flex-start;
+  }
+
+  .customContainer.solution .customCard {
+    width: 6rem;
+  }
+
+  .customContainer.solution .customCard.active {
+    width: 18rem;
+  }
+
+  .customContainer.solution .customCard__img {
+    height: 18rem;
+  }
+
+  .customContainer.solution .customCard.active .customCard__img {
+    height: 28rem;
+  }
+
+  .customContainer.solution .card__contents {
+    display:none;
+  }
+
+  .customContainer.solution .card__content {
+    display: none;
+  }
+
+  .customContainer.solution .card__prev-btn,
+  .customContainer.solution .card__next-btn {
+    top: 95%;
+    transform: translateY(-50%);
+  }
+
+  .customContainer.solution .card__prev-btn {
+    left: 1rem;
+  }
+
+  .customContainer.solution .card__next-btn {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .customContainer.solution .cards-wrapper {
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .customContainer.solution .customCard {
+    display: none;
+  }
+
+  .customContainer.solution .customCard.active {
+    display: block;
+    margin: 0 auto;
+  }
 }
