@@ -9,9 +9,9 @@
                     <img src="/custom_slider/static/src/img/slider-3.jpg" class="slide" />
                 </div>
             </div>
-            <div class="nav text-center mt-3">
-                <button class="slider-prev">Prev</button>
-                <button class="slider-next">Next</button>
+            <div class="nav text-center m-4 gap-2">
+                <button class="slider-prev btn btn-primary px-2 rounded-circle">Prev</button>
+                <button class="slider-next btn btn-primary px-2 rounded-circle">Next</button>
             </div>
         </section>
     </template>
