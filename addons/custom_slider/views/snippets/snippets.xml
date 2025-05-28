@@ -13,6 +13,10 @@
                     group="customSlider">
                     <keywords>custom slider , slider , carousel, solution</keywords>
                 </t>
+                <t t-snippet="custom_slider.image_snippet_slider" string="Image Slider"
+                    group="customSlider">
+                    <keywords>image slider , slider ,</keywords>
+                </t>
             </snippets>
         </xpath>
     </template>
