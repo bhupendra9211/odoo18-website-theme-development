@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="custom_slider_stories_snippet" name="Custom Slider">
+    <section class="sm_slider_stories_container pt96 pb96" id="custom_slider_stories">
+      <div class="container">
+        <div class="col-lg-12 header-container">
+          <h2 style="text-align: center;">Your Journey Begins Here</h2>
+          <p class="lead" style="text-align: center;">We make every moment count with solutions
+            designed just for you.</p>
+        </div>
+        <div class="main-container-stories">
+          <div class="inner-container stories">
+
+            <div class="wrappers-bg">
+              <div class="wrapper-bg active">
+                <img class="lazyloaded" src="/custom_slider/static/src/img/story1-bg.jpg" alt="story3 bg"/>
+              </div>
+              <div class="wrapper-bg">
+                <img class="lazyloaded" src="/custom_slider/static/src/img/story2-bg.jpg" alt="story2 bg"/>
+              </div>
+              <div class="wrapper-bg">
+                <img class="lazyloaded" src="/custom_slider/static/src/img/story3-bg.jpg" alt="story3 bg"/>
+              </div>
+              <div class="wrapper-bg">
+                <img class="lazyloaded" src="/custom_slider/static/src/img/story4-bg.png" alt="story4 bg"/>
+              </div>
+              <div class="wrapper-bg">
+                <img class="lazyloaded" src="/custom_slider/static/src/img/case-studies-milesight-headquaters-background.jpg"
+                  alt="story4 bg"/>
+              </div>
+            </div>
+
+            <div class="card-container">
+
+              <div class="card__imgs">
+                <div class="card__img active">
+                  <figure class="o_card_img_wrapper mb-0">
+                    <img class="o_card_img card-img-top"
+                      src="/custom_slider/static/src/img/case-studies-milesight-headquaters-thumbnail.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="card__img">
+                  <figure class="o_card_img_wrapper mb-0">
+                    <img class="o_card_img card-img-top" src="/custom_slider/static/src/img/story3.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="card__img">
+                  <figure class="o_card_img_wrapper mb-0">
+                    <img class="o_card_img card-img-top" src="/custom_slider/static/src/img/story1.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="card__img">
+                  <figure class="o_card_img_wrapper mb-0">
+                    <img class="o_card_img card-img-top" src="/custom_slider/static/src/img/story2.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="card__img">
+                  <figure class="o_card_img_wrapper mb-0">
+                    <img class="o_card_img card-img-top" src="/custom_slider/static/src/img/story4.jpg" alt="" />
+                  </figure>
+                </div>
+              </div>
+
+              <div class="card__contents">
+                <div class="card__content active">
+                  <h5 class="card__title">MILESIGHT SMART GREEN BUILDING</h5>
+                  <p class="card__text">Milesight's Smart Green Building presents a state-of-the-art
+                    solution that achieves annual savings of $45,000 by enhancing energy efficiency.</p>
+                  <a href="#" class="btn btn-primary  card__btn">Learn More</a>
+                </div>
+                <div class="card__content">
+                  <h5 class="card__title">Milesight Surveillance Solution in Thailand</h5>
+                  <p class="card__text">The excellent performance of Milesight products and the ease
+                    of
+                    implementation of Milesight system greatly meet the high standard requirements.</p>
+                  <a href="#" class="btn btn-primary  card__btn">Learn More</a>
+                </div>
+                <div class="card__content">
+                  <h5 class="card__title">Milesight Security System in Vietnam</h5>
+                  <p class="card__text">At the luxury Sunwah Pearl Binh Thanh Apartment, Vietnam,
+                    Milesight products are deployed to protect safety of residents and employees.</p>
+                  <a href="#" class="btn btn-primary  card__btn">Learn More</a>
+                </div>
+                <div class="card__content">
+                  <h5 class="card__title">School IAQ Monitoring</h5>
+                  <p class="card__text">Milesight 47,000 IAQ sensors create a healthier learning
+                    environment in Canadian schools.</p>
+                  <a href="#" class="btn btn-primary  card__btn">Learn More</a>
+                </div>
+                <div class="card__content">
+                  <h5 class="card__title">Energy-Efficient Building in Canada</h5>
+                  <p class="card__text">Milesight 4,400 sensors energize 62 buildings and campus in
+                    Canada, saving over $1,000,000 annual energy cost.</p>
+                  <a href="#" class="btn btn-primary  card__btn">Learn More</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="pagination-pages">
+              <div class="pages-wrapper">
+                <p class="page active">Green Building</p>
+                <p class="page">Commercial Security</p>
+                <p class="page">Residential Security</p>
+                <p class="page">Indoor Air Quality</p>
+                <p class="page">Energy Efficiency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>
