@@ -5,7 +5,10 @@
             <snippets id="snippet_groups" string="Custom Slider">
                 <t snippet-group="customSlider" t-snippet="website.s_snippet_group"
                     string="Custom Slider"
-                    t-thumbnail="/website/static/src/img/snippets_thumbs/s_three_columns.svg"/>
+                    t-thumbnail="/website/static/src/img/snippets_thumbs/s_three_columns.svg" />
+                <t snippet-group="customSliderStories" t-snippet="website.s_snippet_group"
+                    string="Custom Slider Stories"
+                    t-thumbnail="/website/static/src/img/snippets_thumbs/s_three_columns.svg" />
             </snippets>
 
             <snippets id="snippet_structure" string="Structure">
@@ -24,6 +27,10 @@
                 <t t-snippet="custom_slider.bootstrap_snippet_slider" string="Bootstrap Slider"
                     group="customSlider">
                     <keywords>bootstrap slider , slider ,</keywords>
+                </t>
+                <t t-snippet="custom_slider.custom_slider_stories_snippet" string="Custom Slider"
+                    group="customSliderStories">
+                    <keywords>custom slider , slider , carousel, stories</keywords>
                 </t>
             </snippets>
         </xpath>

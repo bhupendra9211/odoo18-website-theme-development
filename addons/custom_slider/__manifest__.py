@@ -7,7 +7,6 @@
     """,
     'author': "Smarten",
     'website': "https://www.smarten.com.np",
-    # 'category': 'Theme',
     'category': 'eCommerce',
     'sequence': -1,
     'version': '18.0',
