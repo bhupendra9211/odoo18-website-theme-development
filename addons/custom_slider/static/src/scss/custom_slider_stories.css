@@ -18,7 +18,7 @@
   width: var(--content-width);
   display: flex;
   justify-content: space-between;
-  margin-top: 7em;
+  margin-top: 6em;
 }
 
 .main-container-stories .pagination-pages .page {
